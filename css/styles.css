@@ -1,3 +1,7 @@
 #musicTitle {
   margin-top: 10px;
 }
+
+#results {
+  display: none;
+}

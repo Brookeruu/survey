@@ -11,25 +11,20 @@
   <body>
     <div class="container">
       <h1>Survey</h1>
-      <form id="name">
+      <form id="formOne">
         <div class="form-group">
           <label for="name1">Full Name</label>
           <input type="text" id="name1" class="form-control">
         </div>
-        <button type="submit" class="btn">Submit</button>
-      </form>
 
-      <form id="favFood">
         <p>Your favorite food of these three:</p>
-        <select class="form-control" name="food">
+        <select class="form-control" name="food" id="food">
           <option>Pizza</option>
           <option>Burritos</option>
           <option>Curry</option>
         </select>
         <button type="submit" class="btn">Submit</button>
-      </form>
 
-      <form id="favMusic">
         <p id="musicTitle">Your favorite music of these:</p>
         <div class="radio">
           <label>
@@ -49,39 +44,28 @@
             Electronic
           </label>
         </div>
-        <button type="submit" class="btn">Submit</button>
-      </form>
 
-      <form id="birthday">
         <p>Select your birthday:</p>
         <div class="form-group">
           <label for="born">Date of birth:</label>
           <input id="born" class="form-control" type="date">
         </div>
-        <button type="submit" class="btn"></button>
-      </form>
 
-      <form id="favColor">
         <p>Select your favorite color:</p>
         <div class="form-group">
           <label for="color">Date of birth:</label>
-          <input id="born" class="form-control" type="color">
+          <input id="color" class="form-control" type="color">
         </div>
         <button type="submit" class="btn">Submit</button>
       </form>
 
-
-      <div class="">
+      <div id="results">
         <p>Your name is <span class="name"></span></p>
         <p>Your favorite food is <span class="food"></span></p>
         <p>Your favorite music is <span class="music"></span></p>
-        <p>Your favorite color is <span class="name"></span></p>
+        <p>Your birthday is <span class="birthday"></span></p>
+        <p>Your favorite color is <span class="color"></span></p>
       </div>
-
-
-
-
-
     </div>
   </body>
 </html>

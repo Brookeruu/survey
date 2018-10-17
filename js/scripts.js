@@ -1,18 +1,19 @@
 $(document).ready(function() {
-  var favFood = $("#favFood").val();
+  $("#formOne").submit(function(event) {
+    var nameInput = $("input#name1").val();
+    var favFoodSelect = $("select#food").val();
+    var musicInput = $("input:radio[name=music]:checked").val();
+    var dobInput = $("input#born").val();
+    var colorInput = $("input#color").val();
 
-  var music = $("input:radio[name=music]:checked").val();
+    $(".name").text(nameInput);
+    $(".food").text(favFoodSelect);
+    $(".music").text(musicInput);
+    $(".birthday").text(dobInput);
+    $(".color").text(colorInput);
 
-  var dob = $("#born").val();
+    $("#results").show();
 
-  var color = $("#favColor").val();
-
-
-
-
-
-
-
-
-
+    event.preventDefault();
+  });
 });
